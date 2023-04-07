@@ -14,5 +14,5 @@ urlpatterns = [
     path('AR', views.AR_list, name='AR_list'),
     path('doclist', views.document_list, name='document_list'),
 
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
 
