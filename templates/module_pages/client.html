@@ -35,6 +35,32 @@
     </div>
 </nav>
 <div class="container-fluid">
-    clients
+    <table class="table-hover table-bordered table-sm small table">
+        <!-- <table class="table-hover table-sm table-bordered small table table-dark table-striped">         -->
+        <thead class="table-primary text-center">
+            <tr>
+                <th scope="col">Client</th>
+                <th scope="col">Category</th>
+                <th scope="col">Email</th>
+                <th scope="col">Mobile</th>
+                <th scope="col">Industry</th>
+                <th scope="col">Address</th>
+                <th scope="col">Country</th>
+            </tr>
+        </thead>
+        {% for client in clients %}
+        <tr>
+            <td style="font-weight: bold;"><a href="#">{{client.client_name}}</a>
+            </td>
+            <td style="font-weight: bold;">{{ client.category }}</td>
+            <td style="font-weight: bold;">{{ client.email }}</td>
+            <td style="font-weight: bold;">{{ client.mobile }}</td>
+            <td style="font-weight: bold;">{{ client.industry }}</td>
+            <td style="font-weight: bold;">{{ client.address }}</td>
+            <td style="font-weight: bold;">{{ client.country }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
 </div>
 {% endblock %}

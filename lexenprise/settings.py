@@ -26,7 +26,6 @@ SECRET_KEY = 'django-insecure-za5-ml*isengf%!&^k680v@rpg0d)=a4=@rxviv_+o4_fq5ok(
 #DEBUG = True
 DEBUG = False
 ALLOWED_HOSTS = ['lexenprise.azurewebsites.net']
-
 #ALLOWED_HOSTS = []
 
 # Application definition
@@ -43,7 +42,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',    
+#    'whitenoise.middleware.WhiteNoiseMiddleware',    
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -76,27 +75,27 @@ WSGI_APPLICATION = 'lexenprise.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 
-DATABASES = {
-    "default": {
-        'ENGINE': 'mssql',
-        'NAME': 'LexEnprise',
-        'USER': 'John',
-        'PASSWORD': '640515',
-        'HOST': '(LocalDb)\\MSSQLLocalDB',
-        'PORT': '',
-    }
-}
+# DATABASES = {
+#     "default": {
+#         'ENGINE': 'mssql',
+#         'NAME': 'LexEnprise',
+#         'USER': 'John',
+#         'PASSWORD': '640515',
+#         'HOST': '(LocalDb)\\MSSQLLocalDB',
+#         'PORT': '',
+#     }
+# }
 
 
 # Password validation
@@ -135,7 +134,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_DIRS = [
     BASE_DIR / 'lexenprise/static',
 
