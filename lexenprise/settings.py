@@ -23,11 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-za5-ml*isengf%!&^k680v@rpg0d)=a4=@rxviv_+o4_fq5ok('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-#DEBUG = False
-#ALLOWED_HOSTS = ['lexenprise.azurewebsites.net']
+#DEBUG = True
+DEBUG = False
+ALLOWED_HOSTS = ['lexenprise.azurewebsites.net']
 
-ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = []
 
 # Application definition
 
