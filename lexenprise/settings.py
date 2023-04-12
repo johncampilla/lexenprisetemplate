@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-za5-ml*isengf%!&^k680v@rpg0d)=a4=@rxviv_+o4_fq5ok(
 DEBUG = False
 ALLOWED_HOSTS = ['lexenprise.azurewebsites.net']
 #ALLOWED_HOSTS = []
+#john
 
 # Application definition
 
