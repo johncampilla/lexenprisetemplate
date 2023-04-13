@@ -82,6 +82,7 @@ WSGI_APPLICATION = 'lexenprise.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+#joh
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
